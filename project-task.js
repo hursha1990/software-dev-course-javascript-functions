@@ -72,3 +72,46 @@ for (let i = 0; i < names.length; i++) {
 */
 
 // ✅ Your refactored code goes below this line!
+
+// Function to greet a user
+function greetUser(name) {
+    console.log(`Welcome, ${name}!`);
+}
+
+// Function to calculate the sum of two numbers
+function calculateSum(a, b) {
+    return a + b;
+}
+
+// Function to calculate the product of two numbers
+function calculateProduct(a, b) {
+    return a * b;
+}
+
+// Function to print all names from an array
+function printNames(namesArray) {
+    console.log("Names in the list:");
+    for (let name of namesArray) {
+        console.log(name);
+    }
+}
+
+// ===== Using the Functions =====
+
+// Greeting multiple users
+let users = ["Alice", "Bob", "Charlie"];
+for (let user of users) {
+    greetUser(user);
+}
+
+// Sum calculation
+let num3 = 5, num4 = 10;
+let sum1 = calculateSum(num3, num4);
+console.log(`The sum of ${num3} and ${num4} is ${sum1}`);
+
+// Product calculation
+let product1 = calculateProduct(num3, num4);
+console.log(`The product of ${num3} and ${num4} is ${product1}`);
+
+// Printing names from a list
+printNames(users);
